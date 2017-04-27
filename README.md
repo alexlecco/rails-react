@@ -1,4 +1,4 @@
-# Rails-React app
+# Rails-React app from [AirPair's tutorial](https://www.airpair.com/reactjs/posts/reactjs-a-guide-for-rails-developers)
 
 * rails -v
 5.0.1
