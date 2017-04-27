@@ -1,5 +1,9 @@
 @Records = React.createClass
-  render: ->
+  getInitialState: -> # initialize component's properties
+    records: @props.date
+  getDefaultProps: -> # generate initial state
+    records: []
+  render: -> # render component
     React.DOM.div
       className: 'records'
       React.DOM.h2
