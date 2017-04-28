@@ -3,6 +3,11 @@
     title: ''
     date: ''
     amount: ''
+  handleChange: (e) ->
+    name = e.target.name
+    @setState "#{name}": e.target.value
+  valid: ->
+    @state.title && @state.date && @state.amount
   render: ->
     React.DOM.form
       className: 'form-inline'
