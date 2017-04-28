@@ -3,12 +3,18 @@
     records: @props.date
   getDefaultProps: -> # generate initial state
     records: []
+  addRecord: (record) ->
+    records = @state.records.slice()
+    records.push record
+    @setState records: records
   render: -> # render component
     React.DOM.div
       className: 'records'
       React.DOM.h2
         className: 'title'
         'Records'
+      React.createElement RecordForm, handleNewRecord: @addRecord
+      React.DOM.hr null
       React.DOM.table
         className: 'table table-bordered'
         React-DOM.thead null,
