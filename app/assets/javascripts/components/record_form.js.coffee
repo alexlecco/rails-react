@@ -23,16 +23,16 @@
       className: 'form-inline container-fluid'
       onSubmit: @handleSubmit
       React.DOM.div
-        className: 'form-group'
+        className: 'form-group container-fluid'
         React.DOM.input
-          type: 'text'
+          type: 'date'
           className: 'form-control'
           placeholder: 'Date'
           name: 'date'
           value: @state.date
           onChange: @handleChange
       React.DOM.div
-        className: 'form-group'
+        className: 'form-group container-fluid'
         React.DOM.input
           type: 'text'
           className: 'form-control'
@@ -41,7 +41,7 @@
           value: @state.title
           onChange: @handleChange
       React.DOM.div
-        className: 'form-group'
+        className: 'form-group container-fluid'
         React.DOM.input
           type: 'number'
           className: 'form-control'
